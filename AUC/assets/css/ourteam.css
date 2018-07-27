@@ -1,0 +1,278 @@
+#sec2-ourteam{
+    min-height: 400px;
+    background: url(../images/mp-image-02.jpg);
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+  
+}
+.img-person{
+    width: 100%;
+    height: 200px;
+}
+.ourteam-frow{
+    background-color: #163259;
+    opacity: .7;
+}
+.head-ourteampage{
+    margin-top: 15%;
+    font-weight: 1200;
+}
+.head2-ourteampage{
+    color: #163259;
+    font-weight: 900;
+    margin-top: 5%;
+}
+.ourteam-dis{
+    color:#163259;
+    width: 66%;
+    padding-bottom: 2%;
+}
+
+.line{
+    background-color: #ccc;
+    min-height: 1px;
+    width: 50%;
+}
+.ourteampanel1{
+    width: 20%;
+    display: inline-block;
+    margin-left: 15%;
+    border-radius: 0px;
+    border: none;
+    
+}
+
+.my-overlay1{
+     position: absolute;
+    width: 19.6%;
+    height: 300px;
+    background: #E6E6E6;
+    opacity: 0;
+    color: #163259;
+    padding-top: 5%;
+    transition: .5s ease;
+    box-shadow: 0 0 30px #888888;
+}
+
+.ourteampanel1:hover .my-overlay1{
+    opacity: 1;
+}
+
+.ourteampanel1-body{
+    min-height: 300px;
+    background: url(../images/lawyer1.jpg);
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+    border: none;
+     border-radius: 0px;
+        
+}
+.ourteampanel2{
+    width: 20%;
+    display: inline-block;
+    margin-left: 5%;
+    border-radius: 0px;
+    border: none;
+     border-radius: 0px;
+}
+.my-overlay2{
+     position: absolute;
+    width: 19.6%;
+    height: 300px;
+    color: #163259;
+    padding-top: 5%;
+    background: #E6E6E6;
+    opacity: 0;
+    transition: .5s ease;
+    box-shadow: 0 0 30px #888888;
+}
+
+
+.ourteampanel2:hover .my-overlay2{
+    opacity: 1;
+}
+
+
+.ourteampanel2-body{
+    min-height: 300px;
+    background: url(../images/lawyer1.jpg);
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+    border: none;
+    border-radius: 0px;
+}
+.ourteampanel3{
+    width: 20%;
+    display: inline-block;
+    margin-left: 5%;
+    border-radius: 0px;
+    border: none;
+     border-radius: 0px;
+}
+
+.my-overlay3{
+     position: absolute;
+    width: 19.6%;
+    height: 300px;
+    background: #E6E6E6;
+    color: #163259;
+    opacity: 0;
+    padding-top: 5%;
+    transition: .5s ease;
+    box-shadow: 0 0 30px #888888;
+}
+
+
+.ourteampanel3:hover .my-overlay3{
+    opacity: 1;
+}
+
+
+.ourteampanel3-body{
+    min-height: 300px;
+    background: url(../images/lawyer1.jpg);
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+        border: none;
+     border-radius: 0px;
+}
+
+.ourteampanel-footer{
+    background-color: #163259;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0px;
+}
+
+
+@media (min-width:0px) and (max-width:991px)
+{
+    
+    .ourteampanel1{
+        width: 90%;
+        display: inline-block;
+        margin-left: 5%;
+    }
+
+    .ourteampanel2{
+        width: 90%;
+        display: inline-block;
+        margin-left: 5%;
+    }
+
+    .ourteampanel3{
+        width: 90%;
+        display: inline-block;
+        margin-left: 5%;    
+    }
+    
+    .head-ourteampage{
+        margin-top: 50%;
+        font-weight: 1200;
+    }
+}
+
+@media (min-width:300px) and (max-width:399px)
+{
+    
+    .my-overlay1{
+        width: 82%;
+    }
+    .my-overlay2{
+        width: 82%;
+    }
+    .my-overlay3{
+        width: 82%;
+    }
+}
+
+@media (min-width:400px) and (max-width:499px)
+{
+    .my-overlay1{
+        width: 84%;
+    }
+    .my-overlay2{
+        width: 84%;
+    }
+    .my-overlay3{
+        width: 84%;
+    }
+}
+
+@media (min-width:500px) and (max-width:599px)
+{
+    .my-overlay1{
+        width: 85%;
+    }
+    .my-overlay2{
+        width: 85%;
+    }
+    .my-overlay3{
+        width: 85%;
+    }
+}
+
+
+@media (min-width:600px) and (max-width:699px)
+{
+    .my-overlay1{
+        width: 86%;
+    }
+    .my-overlay2{
+        width: 86%;
+    }
+    .my-overlay3{
+        width: 86%;
+    }
+}
+
+@media (min-width:700px) and (max-width:799px)
+{
+    .my-overlay1{
+        width: 87%;
+    }
+    .my-overlay2{
+        width: 87%;
+    }
+    .my-overlay3{
+        width: 87%;
+    }
+}
+
+
+@media (min-width:800px) and (max-width:899px)
+{
+    .my-overlay1{
+        width: 87%;
+    }
+    .my-overlay2{
+        width: 87%;
+    }
+    .my-overlay3{
+        width: 87%;
+    }
+}
+
+
+@media (min-width:900px) and (max-width:991px)
+{
+    .my-overlay1{
+        width: 87%;
+    }
+    .my-overlay2{
+        width: 87%;
+    }
+    .my-overlay3{
+        width: 87%;
+    }
+}

@@ -1,0 +1,52 @@
+  <!--modal-->
+    
+  
+
+.modal-body{
+    border-radius: 0px !important;
+}
+.modal-footer{
+    padding: 0px 0px 0px 0px !important;
+    border-radius: 0px !important;
+}
+.mfoot-col1{
+    padding-right: 0px;
+}
+.mfoot-col2{
+    padding-left: 0px;
+}
+
+.cancel-button
+{
+    border-radius: 0px;
+    background-color: #163259;
+    color:#ffffff;
+    border-color: #163259;
+    border-style: solid;
+    border-width: 2px;
+}
+.cancel-button:hover{
+	color:#ffffff !important;
+}
+.confirm-button{
+    border-radius: 0px;
+    background-color:#ffffff;
+    color:#163259;
+    border-color: #163259;
+    border-style: solid;
+    border-width: 2px;
+}
+.confirm-button:hover{
+color:#163259 !important;
+}
+
+@media (min-width: 0px) and (max-width: 991px)
+{
+	.mfoot-col1{
+    		padding-right: 15px;
+	}
+	.mfoot-col2{
+    		padding-left: 15px;
+	}
+}
+<!--model-->

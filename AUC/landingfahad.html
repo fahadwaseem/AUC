@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Landing page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="assets/css/landing.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style>
+    
+
+
+.overlay {
+    height: 100%;
+    width: 0;
+    opacity: .8;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    background-color:  #163259;
+    color: #FFFFFF;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+        
+#overlay-text
+{
+    padding-bottom: 5%;
+    padding-left: 7%;
+    padding-right: 3%;
+    font-size: 18px;
+    font-weight: 600;
+}
+        
+#overlay-text2
+{
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 7%;
+    font-size: 18px;
+    font-weight: 600;
+    
+}
+        
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+        
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+    </style>
+    <script>
+        
+            function openNav(obj) {
+                
+                var text;
+                                var text1; 
+                                if(obj.getAttribute('data-myname')==='1')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='2')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='3')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='4')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='5')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='6')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='7')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='8')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='9')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='10')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='11')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='12')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='13')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                                else if(obj.getAttribute('data-myname')==='14')
+                                {
+                                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                    text1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.";
+                                }
+                        document.getElementById('overlay-text').innerHTML = text;
+                        document.getElementById('overlay-text2').innerHTML = text1;
+                
+                
+                      if(innerWidth<=991)
+                      {
+                                
+                                document.getElementById("myNav").style.width = "100%";
+                      }
+                      else
+                      {
+                                if(obj.getAttribute('data-myname')==='1' || obj.getAttribute('data-myname')==='2' || obj.getAttribute('data-myname')==='3')
+                                {
+                                    if(obj.getAttribute('data-open')==='0')
+                                    {
+                                        document.getElementById("expand1").style.height="100%";
+                                        document.getElementById("expand1").style.position="relative";
+                                        obj.setAttribute('data-open','1');
+                                    }
+                                    else
+                                    {
+                                        document.getElementById("expand1").style.height="0%";
+                                        document.getElementById("expand1").style.position="fixed";
+                                        obj.setAttribute('data-open','0');
+                                    }
+                                }
+                                else if(obj.getAttribute('data-myname')==='4' || obj.getAttribute('data-myname')==='5' || obj.getAttribute('data-myname')==='6' || obj.getAttribute('data-myname')==='7')
+                                {
+                                    if(obj.getAttribute('data-open')==='0')
+                                    {
+                                        document.getElementById("expand2").style.height="100%";
+                                        document.getElementById("expand2").style.position="relative";
+                                        obj.setAttribute('data-open','1');
+                                    }
+                                    else
+                                    {
+                                        document.getElementById("expand2").style.height="0%";
+                                        document.getElementById("expand2").style.position="fixed";
+                                        obj.setAttribute('data-open','0');
+                                    }
+                                }
+                                else if(obj.getAttribute('data-myname')==='8' || obj.getAttribute('data-myname')==='9' || obj.getAttribute('data-myname')==='10' || obj.getAttribute('data-myname')==='11')
+                                {
+                                    if(obj.getAttribute('data-open')==='0')
+                                    {
+                                        document.getElementById("expand3").style.height="100%";
+                                        document.getElementById("expand3").style.position="relative";
+                                        obj.setAttribute('data-open','1');
+                                    }
+                                    else
+                                    {
+                                        document.getElementById("expand3").style.height="0%";
+                                        document.getElementById("expand3").style.position="fixed";
+                                        obj.setAttribute('data-open','0');
+                                    }
+                                }
+                                else if(obj.getAttribute('data-myname')==='12' || obj.getAttribute('data-myname')==='13' || obj.getAttribute('data-myname')==='14')
+                                {
+                                    if(obj.getAttribute('data-open')==='0')
+                                    {
+                                        document.getElementById("expand4").style.height="100%";
+                                        document.getElementById("expand4").style.position="relative";
+                                        obj.setAttribute('data-open','1');
+                                    }
+                                    else
+                                    {
+                                        document.getElementById("expand4").style.height="0%";
+                                        document.getElementById("expand4").style.position="fixed";
+                                        obj.setAttribute('data-open','0');
+                                    }
+                                }
+                      }
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-smooth-scroll-offset="77" style="max-width:100%;overflow-x:hidden;">
+    
+    
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="border-radius:0px;">
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6"><br><input type=text  class="input form-control input-lg" placeholder="Name"></div>
+                    <div class="col-md-6"><br><input type=email  class="input form-control input-lg" placeholder="Email"></div>
+                </div>
+                <div class="row">
+                <div class="col-md-12 col-lg-12">
+                <br>
+                <input type=number  class="input form-control input-lg" placeholder="Contact no">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-md-12 col-lg-12">
+                <br>
+                <textarea  class="input form-control input-lg" placeholder="State Your Query"></textarea>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 mfoot-col1"><button type="button" class="btn btn-block cancel-button" data-dismiss="modal">Cancel</button></div>
+                <div class="col-md-6 col-lg-6 mfoot-col2">
+                    <button type="button" class="btn btn-block confirm-button">Confirm</button>
+                </div>
+            </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    
+    
+    
+    
+<div id="myNav" class="overlay">
+    <div class="row">
+        <div class="col-md-12">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+    </div>
+  <div class="overlay-content">
+      <div class="col-md-6">  
+        <p id="overlay-text">
+        </p>
+      </div>
+      <div class="col-md-6">
+        <p id="overlay-text2">
+        </p>
+      </div>
+  </div>
+</div>
+
+<div id="section1" class="container-fluid">
+    <!--
+    <div class="row">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-10 col-lg-10 colheader" >
+                    <nav class="navbar navbar-default" >
+                      <div class="container-fluid" style="padding-left:0px;padding-right:0px">
+                        <div class="navbar-header" style="padding-left:0px;padding-right:0px">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                          </button>
+                        </div>
+                        <div class="collapse navbar-collapse " id="myNavbar" style="padding-left:0px;padding-right:0px">
+                          <ul class="nav navbar-nav">
+                            <li class="header-list list-first"><a  class="headerbutton no-border-right" href="#section3"><span>WHAT WE DO</span></a></li>
+                            <li class="header-list"><a  class="headerbutton no-border-right" href="#section2"><span>WHO WE ARE</span></a></li>
+                            <li class="header-list"><a  class="headerbutton no-border-right" href="#section7"><span>WHERE WE ARE</span></a></li>  
+                            <li class="header-list"><a  class="headerbutton no-border-right" href="career.html"><span>CAREERS</span></a></li>
+                            <li class="header-list"><a  class="headerbutton no-border-right" href="#section6"><span>LEGAL ADVICE</span></a></li>
+                            <li class="header-list"><a  class="headerbutton" href="ourteam.html"><span>OUR TEAM</span></a></li> 
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>       
+            
+         </div>
+        <div class="col-md-1 col-lg-1"></div>
+    </div>
+    -->
+    <div class="row row-second">
+        <div class="col-md-2 col-lg-2"></div>
+        <div class="col-md-4 col-lg-4">
+            <a style="display:block" href="#section3">
+            <div class="panel-1 panel panel-default" href="#section3">
+                <div class="container-fluid">
+                We are a client centeric,<br>
+                creative and enterprizing<br>
+                law firm.<br>
+                <div class="div-panel-1"><span class="span-in-panel">WHAT WE DO  <i class="fa fa-long-arrow-right" ></i></span></div>
+                </div>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-4 col-lg-4">
+            <div class="panel panel-default panel-2 nopadding">
+                <div class="container-fluid nopadding">
+                    <div class="row nopadding" >
+                        <div class="col-md-12 col-lg-12">
+                            <a style="display:block" href="career.html">
+                            <div class="panel panel-default top-panel-panel-2">
+                                Want to be a part of it? 
+                                <div class="div-top-innerpanel-2"><span class="span-in-panel">CAREERS <i class="fa fa-long-arrow-right"></i></span></div>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-md-6 col-lg-6">
+                            <a style="display:block" href="#section6">
+                            <div class="panel panel-default lower-panel1-panel-2">
+                                <div class="blue-overlay"></div>
+                                <p>
+                                Need Legal<br>
+                                Advice?
+                                    </p>
+                                <p class="div-bottom-innerpanel-2"><span class="span-in-panel">LEGAL ADVICE <i class="fa fa-long-arrow-right"></i></span></p>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            <a style="display:block" href="#section7">
+                            <div class="panel panel-default lower-panel2-panel-2">
+                                <p>Want to<br> meet?</p> 
+                                <p class="div-bottom-innerpanel-2"><span class="span-in-panel2">WHERE WE ARE <i class="fa fa-long-arrow-right"></i></span></p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 col-lg-2">
+        </div>
+        <div class="col-md-2 col-lg-2">
+            <div class="panel panel-default bottom-panel3">
+                <center><img src="assets/images/auc-logo.png" style="width:60%;height:60%"></center>
+            </div>
+        </div>
+        <div class="col-md-4 col-lg-4">
+            <a style="display:block" href="career.html" style="text-decoration:none">
+            <div class="panel panel-default bottom-panel">
+                Say hi to team! 
+            <p class="div-top-innerpanel-4"><span class="span-in-panel">CAREERS
+                <i class="fa fa-long-arrow-right"></i></span></p>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-lg-2">
+            <a style="display:block" href="#section8">
+            <div class="panel panel-default bottom-panel2" >
+                <p>
+                Want to ask<br>something?
+                </p>
+            <p class="div-top-innerpanel-3"><span class="span-in-panel">SAY HI!
+                <i class="fa fa-long-arrow-right"></i></span></p>
+            </div>
+            </a>
+        </div>
+        <div class="col-md-2 col-lg-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <center><a href="#section8" style="color:#f2f2f2"><i class="fa fa-angle-double-down"></i></a></center>
+        </div>
+    </div>
+</div>
+<div id="section2" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+        <center><h1>Something About Us</h1></center>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 aboutusdetail"><p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+            </p></div>
+        <div class="col-md-6 aboutusdetail1"><p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+            </p></div>
+    </div>
+</div>
+<div id="section3" class="container-fluid">
+  <div class="row">
+      <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-4 col-lg-4">
+          <div class="panel panel-default long-panel-sec3" onclick="openNav(this)" data-myname="1" data-open="0">
+              <div class="container-fluid">
+                  <h2>What we do.</h2><br><br>
+                  <span class="arrow"><i class="fa fa-long-arrow-right myarrow"></i></span>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="2" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-07.png"></center><br>
+                  <center><p class="sec3-dis">Coprate <br> Advisory</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="3" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-08.png"></center><br>
+                  <center><p class="sec3-dis">Comercial Finance <br>and Banking</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-lg-2">
+      </div>
+      <div class="col-md-8 col-lg-8">
+          <div id="expand1"  class="panel panel-default" >
+              <div class="container-fluid">
+                  <div class="row">
+                        <div id="overlay-text" class="col-md-6 aboutusdetail"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                        <div id="overlay-text2" class="col-md-6 aboutusdetail1"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="4" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-09.png"></center><br>
+                  <center><p class="sec3-dis">Constitutional<br>Law</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="5" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-10.png"></center><br>
+                  <center><p class="sec3-dis">Criminal and<br>White Collar</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="6" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-11.png"></center><br>
+                  <center><p class="sec3-dis">Tax, Customs<br>and Duties</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="7" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-12.png"></center><br>
+                  <center><p class="sec3-dis">Trade and<br>Investment Law</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2"></div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-lg-2">
+      </div>
+      <div class="col-md-8 col-lg-8">
+          <div id="expand2"  class="panel panel-default" >
+              <div class="container-fluid">
+                  <div class="row">
+                        <div id="overlay-text" class="col-md-6 aboutusdetail"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                        <div id="overlay-text2" class="col-md-6 aboutusdetail1"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+      </div>
+  </div>        
+  <div class="row">
+      <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="8" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-13.png"></center><br>
+                  <center><p class="sec3-dis">Law and Service<br>Laws</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="9" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-14.png"></center><br>
+                  <center><p class="sec3-dis">Enviornment<br>Protection</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="10" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-15.png"></center><br>
+                  <center><p class="sec3-dis">Visa and<br>Immigration</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="11" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-16.png"></center><br>
+                  <center><p class="sec3-dis">Intellectual<br>Property</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2"></div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-lg-2">
+      </div>
+      <div class="col-md-8 col-lg-8">
+          <div id="expand3"  class="panel panel-default" >
+              <div class="container-fluid">
+                  <div class="row">
+                        <div id="overlay-text" class="col-md-6 aboutusdetail"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                        <div id="overlay-text2" class="col-md-6 aboutusdetail1"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-lg-2"></div>
+      <div class="col-md-2 col-lg-2">
+          <div class="panel panel-default panel-sec3" onclick="openNav(this)" data-myname="12" data-open="0">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-17.png"></center><br>
+                  <center><p class="sec3-dis">Family<br>Law</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2" onclick="openNav(this)" data-myname="13" data-open="0">
+          <div class="panel panel-default panel-sec3">
+              <div class="container-fluid">
+               <center><img class="sec3-icon" src="assets/icons/service-icon-18.png"></center><br>
+                  <center><p class="sec3-dis">Oil and<br>Gas</p></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4 col-lg-4">
+          <div class="panel panel-default long-panel-sec3" onclick="openNav(this)" data-myname="14" data-open="0">
+              <div class="container-fluid">
+                  <br><br><br>
+                  <center><h2>More than just a firm.</h2></center>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2"></div>
+  </div>
+  <div class="row">
+      <div class="col-md-2 col-lg-2">
+      </div>
+      <div class="col-md-8 col-lg-8">
+          <div id="expand4"  class="panel panel-default" >
+              <div class="container-fluid">
+                  <div class="row">
+                        <div id="overlay-text" class="col-md-6 aboutusdetail"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                        <div id="overlay-text2" class="col-md-6 aboutusdetail1"><p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare ligula eu justo condimentum, nec aliquam leo hendrerit. Nulla facilisi. Phasellus posuere nibh ut felis aliquam placerat. Nam tincidunt diam ante, quis pretium enim imperdiet ut. Praesent at felis vehicula, eleifend augue sed, consectetur lorem. Suspendisse nec turpis id tortor dapibus dictum et non mauris. Aenean vel nibh turpis. Curabitur ornare id nisi eu interdum.
+                            </p></div>
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-2 col-lg-2">
+      </div>
+  </div>
+</div>
+<div id="section4" class="container-fluid">
+  <div class="row">
+      <div class="col-md-6"></div>
+      <div class="col-md-6">
+          <center><h1 class="sec4-heading">Coprate Social<br> Responsibility</h1></center>
+            <p><span class="sec4-span">We are determined to achieve our </span><br>
+              <span class="sec4-span">strategic business goals in a way that is</span><br>
+              <span class="sec4-span"> consistent with our values. We ensure that </span><br>
+              <span class="sec4-span">our values from an integral nexus to </span><br>
+              <span class="sec4-span">relationships we build with our clients</span>
+          </p>
+      </div>
+  </div>
+</div>
+<div id="section5" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <center><h1>Institutions Represented</h1></center>
+        </div>
+    </div>
+    <div class="row row2sec5">
+        <div class="col-md-3 col-lg-3">
+            <center><img class="logo-clients" src="assets/images/logo1.PNG"></center>
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <center><img class="logo-clients" src="assets/images/logo2.PNG"></center>
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <center><img class="logo-clients" src="assets/images/logo3.PNG"></center>
+        </div>
+        <div class="col-md-3 col-lg-3">
+            <center><img class="logo-clients" src="assets/images/logo4.PNG"></center>
+        </div>
+    </div>
+    <div class="row row3sec5">
+        <div class="col-md-1 col-lg-2"></div>
+        <div class="col-md-4 col-lg-3">
+            <center><img class="logo-clients" src="assets/images/logo5.PNG"></center>
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <center><img class="logo-clients" src="assets/images/logo6.PNG"></center>
+        </div>
+        <div class="col-md-4 col-lg-3">
+            <center><img class="logo-clients" src="assets/images/logo7.PNG"></center>
+        </div>
+    </div>
+</div>
+<div id="section6" class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+            <div class="panel panel-default pane2-sec6">
+                <div class="panel panel-default panel-sec6" style="right:55%;">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12">
+                        <h1>Need Legal<br> Advice?</h1></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <a class="btn btn-sec6 " data-toggle="modal" data-target="#myModal">YES <i class="fa fa-long-arrow-right" ></i></a>
+    </div>
+</div>
+<div id="section7" class="container-fluid">
+    <div class="row">
+        <div  class="col-md-12 col-lg-12">   
+            <center><h1>Where We Are</h1></center>
+    <center><img class="img-map" src="assets/images/map-image.jpg"></center>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-sec-7">
+            <h3>Lahore</h3>
+            <p><i class="fa fa-map-marker"></i> 2nd Floor, Building No 2, Gardee<br>Trust Building, Napier Road, Lahore, Pakistan<br>
+                <i class="fa fa-phone"></i> +92 423 7244 008 <i class="fa fa-print"></i> +92 423 7244 008<br>
+                <i class="fa fa-envelope-o"></i> info@ahmenduzair.com
+            </p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sec-7">
+            <h3>Islambad</h3>
+            <p><i class="fa fa-map-marker"></i> 2nd Floor, Building No 2, Gardee<br>Trust Building, Napier Road, Lahore, Pakistan<br>
+                <i class="fa fa-phone"></i> +92 423 7244 008 <i class="fa fa-print"></i> +92 423 7244 008<br>
+                <i class="fa fa-envelope-o"></i> info@ahmenduzair.com
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-6 col-sec-7">
+            <h3>Peshwar</h3>
+            <p><i class="fa fa-map-marker"></i> 2nd Floor, Building No 2, Gardee<br>Trust Building, Napier Road, Lahore, Pakistan<br>
+                <i class="fa fa-phone"></i> +92 423 7244 008 <i class="fa fa-print"></i> +92 423 7244 008<br>
+                <i class="fa fa-envelope-o"></i> info@ahmenduzair.com
+            </p>
+        </div>
+        <div class="col-md-6 col-lg-6 col-sec-7">
+            <h3>Dubai</h3>
+            <p><i class="fa fa-map-marker"></i> 2nd Floor, Building No 2, Gardee<br>Trust Building, Napier Road, Lahore, Pakistan<br>
+                <i class="fa fa-phone"></i> +92 423 7244 008 <i class="fa fa-print"></i> +92 423 7244 008<br>
+                <i class="fa fa-envelope-o"></i> info@ahmenduzair.com
+            </p>
+        </div>
+    </div>
+</div>
+<div id="section8" class="container-fluid">
+    <h1 class="head-sec-8">Say Hi!</h1>
+    <form>
+    <div class="row inputrow">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-4 col-lg-4">
+            <input type="text" placeholder="Name:" class="input form-control input-lg" style="display:inline;">
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-4 col-lg-4">
+            <input type="text" placeholder="Company:" class="input form-control input-lg" style="display:inline;">
+        </div>
+        <div class="col-md-2 col-lg-2"></div>
+    </div>
+    <div class="row inputrow">
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-4 col-lg-4">
+            <input type="email" placeholder="Email:" class="input form-control input-lg" style="display:inline;">
+        </div>
+        <div class="col-md-1 col-lg-1"></div>
+        <div class="col-md-4 col-lg-4">
+            <input type="text" placeholder="Phone:" class="input form-control input-lg" style="display:inline;">
+        </div>
+        <div class="col-md-2 col-lg-2"></div>
+    </div>
+    <div class="row inputrow">
+        <div class="col-md-12 col-lg-12">
+            <div class="col-md-2 col-btn">
+            <input type="submit" class="btn btn-sec8 btn-block" style="display:inline;" value="SEND">
+            </div>
+        </div>
+    </div>
+    </form>
+</div>
+<div  class="container-fluid" style="padding-left:0px;padding-right:0px;" >
+    <div class="foot-bg"></div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="footicons">
+                    <a href="#" class="filink">
+                        <div class="icon ficon ic-facebook">
+                        </div>
+                    </a>
+                    <a href="#" class="filink">
+                        <div class="icon ficon ic-twitter">
+                        </div>
+                    </a>
+                    <a href="#" class="filink">
+                        <div class="icon ficon ic-linkedin">
+                        </div>
+                    </a>
+                    <a href="#" class="filink">
+                        <div class="icon ficon ic-instagram">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-1">
+                <center>
+                <a href="landing.html#section3"><p class="footer-text">WHAT WE DO</p></a>
+                </center>
+            </div>
+            <div class="col-md-1">
+                <center>
+                <a href="landing.html#section2"><p class="footer-text">WHO WE ARE</p></a>
+                </center>
+            </div>
+            <div class="col-md-1">
+                <center>
+                <a href="landing.html#section7"><p class="footer-text">WHERE WE ARE</p></a>
+                </center>
+            </div>
+            <div class="col-md-1">
+                <center>
+                <a href="career.html"><p class="footer-text">CAREERS</p></a>
+                </center>
+            </div>
+            <div class="col-md-1">
+                <center>
+                <a href="landing.html#section6"><p class="footer-text">LEGAL ADVICE</p></a>
+                </center>
+            </div>
+            <div class="col-md-1">
+                <center>
+                <a href="ourteam.html"><p class="footer-text">OUR TEAM</p></a>
+                </center>
+            </div>
+            <div class="col-md-1">
+                <center>
+                <a href="landing.html#section8"><p class="footer-text">CONTACT US</p></a>
+                </center>
+            </div>
+        </div>
+</div>
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: "#section1", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#section1 a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+</body>
+</html>

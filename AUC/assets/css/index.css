@@ -1,0 +1,918 @@
+@font-face {
+    font-family: CustomFont;
+    src: url('../fonts/HelveticaNeueLTStdLt.otf');
+}
+body{ 
+    font-family: CustomFont;
+}
+.col1
+{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    padding-right:0px !important;
+}
+.col1-text{
+    margin-top: 24% !important;
+}
+.himage{
+    width: 60px;
+    height: 60px;
+    margin-left: 2%;
+}
+.navicons{
+    margin-left: 10%;
+}
+.h_col1{
+ font-size: 36px;   
+}
+.sidemenu{
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    top:29% !important;
+     background-color: #1e1e22 !important;
+    height: auto !important;
+    opacity: .7;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.mymenu{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 0px !important;
+}
+.mymenu a{
+    color: white !important;
+}
+.project1
+{
+    min-height:  800px;
+    padding-top: 40%;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    color: white;
+    background-image: url(../images/col1-bg.jpg); /* fallback */
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.menu {
+    margin-top:70px;
+    font-size: 24px !important;
+    font-weight: 900;
+}
+.col2
+{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    padding-right:0px !important;
+    padding-left:0px !important;
+}
+.col2-text{    
+    margin-top: 22%;
+}
+.project2
+{
+    min-height:  800px;
+    padding-top: 40%;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    background-image: url(../images/col-2-bg.jpg);
+    color: white;
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.col3
+{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    padding-left:0px !important;
+}
+
+.col3-text{
+    margin-top: 24%;
+}
+.nlink{
+    color:  white;
+    
+}
+.nlink:hover{
+    color:  white;
+    text-decoration-line: none;
+}
+.project3
+{
+    min-height: 800px;
+    padding-top: 40%;
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    background-image: url(../images/col3-bg.jpg);
+    color: white;
+    -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+.dis1{
+    margin-top: 5%;
+    margin-left:25%;margin-right:25%;
+    visibility: hidden;
+}
+.dis2{
+    margin-top: 5%;
+    margin-left:25%;margin-right:25%;
+    visibility: hidden;
+}
+.dis3{
+    margin-top: 5%;
+    margin-left:25%;margin-right:25%;
+    visibility: hidden;
+}
+.project3:hover .dis3{
+    visibility: visible;
+}
+.project2:hover .dis2{
+    visibility: visible;
+}
+.project1:hover .dis1{
+    visibility: visible;
+}
+.fullpager
+{
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background:rgba(255,255,255,0.5);
+}
+.col_div_overlay
+{
+    padding-right: 0px;
+    padding-top: 0px;
+}
+.div_overlay
+{
+   min-height: 638px;
+    background-color: black;
+}
+.globalfooter{
+    background-image: url(../images/footer-shadow.png);
+    background-repeat: repeat-x;
+    z-index: 10;
+    width: 100%;
+    height: 56px;
+    position: fixed;
+    bottom: 0px;
+    font-size: 9px;
+}
+
+.branb {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+.gf-content-left {
+    margin-top: 24px;
+    margin-left: 14px;
+    float: left;
+    display:inline;
+    width:20%;
+}
+.btn-primary{
+    border-radius: 0;
+    margin-top: .6%;
+    color:#898989;
+    font-size: 9px;
+    background-color: #e3e4e5;
+    margin-left: 2%;
+    border: none;
+    height: 23px;
+    display: inline !important;
+    float:left;
+    padding-top:2.5%;
+    height:22px;
+}
+.btn-primary:hover{
+    color:#58585a;
+    background-color:#ced0d1;
+}
+.icon {
+    background-image: url(../images/footer-icons.png);
+    background-repeat: no-repeat;
+}
+.ficon {
+    float: left;
+    margin-left: 3px;
+    margin-top: 2px;
+}
+.ic-facebook {
+    width: 22px;
+    height: 22px;
+    background-position: 0 -49px;
+}
+.ic-facebook:hover{
+    width: 22px;
+    height: 22px;
+    background-position: -67px -49px;
+}
+.closebutton{
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+.ic-twitter {
+    width: 22px;
+    height: 22px;
+    background-position: -179px -49px;
+}
+.ic-twitter:hover{
+    width: 22px;
+    height: 22px;
+    background-position: -87px -49px;
+}
+.ic-linkedin {
+    width: 22px;
+    height: 22px;
+    background-position: -23px -49px;
+}
+.ic-linkedin:hover{
+    width: 22px;
+    height: 22px;
+    background-position: -44px -49px;
+}
+.ic-instagram {
+    width: 22px;
+    height: 22px;
+    background-position: -88px -27px;
+}
+.ic-instagram:hover{
+    width: 22px;
+    height: 22px;
+    background-position: -43px -27px;
+}
+.filink{
+    display:inline;
+    float:left;
+}
+.gf-content-right {
+    float: right;
+    display:inline;
+    width:20%;
+    margin-top:30px;
+    padding-right:1%;
+}
+.gf-content-right-code{
+     margin-right:20%;
+}
+.gf-content-right a{
+    color:#898989;
+    text-decoration-line: none;
+}
+.gf-content-right a:hover{
+    cursor: pointer;
+}
+.header{
+    padding-top: 20px;
+    width: 10%;
+    height:90px;
+    top:15%;
+    background: white;
+    color: black;
+    padding-left: 1%;
+    font-size: 30px;
+    z-index: 99;
+    position: fixed;
+    transition: padding-top 1s;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.header:hover{
+    padding-top: 10px;;
+}
+.glyphicon-menu-hamburger{
+    margin-left:2%;
+    width: 10%;
+    color:  #898989;
+    display:inline;
+    opacity:none;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1e1e22;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align:left;
+}
+
+.overlay a {
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color:#163259;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    left: 35px;
+  }
+}
+
+.overlay-col1{
+    height: 0;
+    width:100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-left: 3%;
+    padding-top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-col1-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+}
+.col1:hover .overlay-col1
+{
+    height: 800px; 
+    padding-top: 10%;
+}
+
+.overlay-col2{
+    height: 0;
+    width:100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-col2-content{
+    position: relative;
+    width: 100%;
+}
+.col2:hover .overlay-col2
+{
+    height: 800px;   
+}
+
+.overlay-col3{
+    height: 0;
+    width:100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.7);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay-col3-content{
+    position: relative;
+    width: 100%;
+}
+.col3:hover .overlay-col3
+{
+    height: 800px;   
+}
+
+
+@media (min-width:300px) and (max-width:430px)
+{
+    .header{
+        width: 30% !important;
+    }
+    .project1{
+        height: 500px;
+    }
+    .project1:hover{
+        width: 100%;
+    }
+    .project2{
+        height: 500px;
+    }
+    .project2:hover{
+        width: 100%;
+    }
+    .project3{
+        height: 500px;
+    }
+    .project3:hover{
+        width: 100%;
+    }
+    .fullpager
+    {
+        position:absolute;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background:rgba(255,255,255,0.5);
+    }
+    .col1:hover .overlay-col1
+    {
+        height: 0px;   
+    }
+    .col2:hover .overlay-col2
+    {
+        height: 0px;   
+    }
+    .col3:hover .overlay-col3
+    {
+        height: 0px;   
+    }
+    .gf-content-right {
+        float: right;
+        display:inline;
+        width:50%;
+        margin-top:30px;
+        padding-right:.5%;
+        font-size: 7px;
+    }
+    .gf-content-right-code{
+     margin-right:5%;
+    }
+    .gf-content-left {
+    margin-top: 24px;
+    margin-left:0px;
+    float: left;
+    display:inline;
+    width:50%;
+    }
+    .navicons{
+    margin-left: 35%;
+    }
+    .sidemenu{
+        top:32% !important;
+    }
+}
+@media (min-width:430px) and (max-width:600px)
+{
+    .sidemenu{
+        top:32% !important;
+    }
+    .header{
+        width: 25% !important;
+    }
+    .project1{
+        height: 600px;
+        -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .project1:hover{
+        width: 100%;
+    }
+    .project2{
+        height: 600px;
+        -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .project2:hover{
+        width: 100%;
+    }
+    .project3{
+        height: 600px;
+        -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .project3:hover{
+        width: 100%;
+    }
+    .fullpager
+    {
+        position:absolute;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background:rgba(255,255,255,0.5);
+    }
+    .col1:hover .overlay-col1
+    {
+        height: 0;   
+    }
+    .col2:hover .overlay-col2
+    {
+        height: 0;   
+    }
+    .col3:hover .overlay-col3
+    {
+        height: 0;   
+    }
+    .gf-content-right {
+        float: right;
+        display:inline;
+        width:40%;
+        margin-top:30px;
+        padding-right:5%;
+        font-size: 8px;
+    }
+    .gf-content-right-code{
+        margin-right:5%;
+    }
+    .gf-content-left {
+        margin-top: 24px;
+        margin-left:3%;
+        float: left;
+        display:inline;
+        width:50%;
+    }
+}
+
+@media (min-width:601px) and (max-width:744px)
+{
+    .sidemenu{
+        top:32% !important;
+    }
+    .header{
+        width: 20% !important;
+    }
+    .project1{
+        height: 600px;
+        -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .project1:hover{
+        width: 100%;
+    }
+    .project2{
+        height: 600px;
+        -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .project2:hover{
+        width: 100%;
+    }
+    .project3{
+        height: 600px;
+        -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .project3:hover{
+        width: 100%;
+        -webkit-background-size:100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size:100% 100%;
+      background-repeat: no-repeat;
+    }
+    .col1-text{
+        margin-top: 5%;
+    }
+    .fullpager
+    {
+        position:absolute;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background:rgba(255,255,255,0.5);
+    }
+    .col1:hover .overlay-col1
+    {
+        height: 0;   
+    }
+    .col2:hover .overlay-col2
+    {
+        height: 0;   
+    }
+    .col3:hover .overlay-col3
+    {
+        height: 0;   
+    }
+    .gf-content-right {
+        float: right;
+        display:inline;
+        width:40%;
+        margin-top:30px;
+        padding-right:5%;
+        font-size: 8px;
+    }
+    .gf-content-right-code{
+        margin-right:5%;
+    }
+    .gf-content-left {
+        margin-top: 24px;
+        margin-left:3%;
+        float: left;
+        display:inline;
+        width:50%;
+    }
+}
+
+@media (min-width:745px) and (max-width:991px)
+{
+    .sidemenu{
+        top:32% !important;
+    }
+    .header{
+        width: 13% !important;
+        padding-left: 2%;
+    }
+    .project1{
+        height: 600px;
+    }
+    
+    .project2{
+        height: 600px;
+    }
+    .project3{
+        height: 600px;
+    }
+    .col2-text{
+     margin-top: 10%;   
+    }
+    .col3-text{
+     margin-top: 2%;   
+    }
+    .fullpager
+    {
+        position:absolute;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background:rgba(255,255,255,0.5);
+    }
+    .col1:hover .overlay-col1
+    {
+        height: 0;   
+    }
+    .col2:hover .overlay-col2
+    {
+        height: 0;   
+    }
+    .col3:hover .overlay-col3
+    {
+        height: 0;   
+    }
+}
+
+@media (min-width:992px) and (max-width:1023px){
+    .gf-content-right {
+        font-size: 8px;
+    }
+    .header{
+        width: 13% !important;
+        padding-left: 3%;
+    }
+      .sidemenu{
+        top:32% !important;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1025px)
+{
+    .header{
+        width: 13% !important;
+        padding-left: 3%;
+    }
+    
+      .sidemenu{
+        top:32% !important;
+    }
+    .project1{
+        min-height:   1336px;
+        padding-top: 300px;
+    }
+    .project1:hover{
+        width: 100%;
+    }
+    .project2{
+        min-height: 1336px;
+    }
+    .project2:hover{
+        width: 100%;
+    }
+    .project3{
+        min-height: 1336px;
+    }
+    .project3:hover{
+        width: 100%;
+    }
+    .col1-text{
+     margin-top: 50px;   
+    }
+    .col2-text{
+     margin-top: 80%;   
+    }
+    .dis1,.dis2,.dis3{
+        margin-top: 10%;
+    }
+    .col3-text{
+     margin-top: 80%;  
+    }
+    .fullpager
+    {
+        position:absolute;
+        padding:0;
+        margin:0;
+        top:0;
+        left:0;
+        width: 100%;
+        min-height: 100%;
+        background:rgba(255,255,255,0.5);
+    }
+    .col1:hover .overlay-col1
+    {
+        height: 0;   
+    }
+    .col2:hover .overlay-col2
+    {
+        height: 0;   
+    }
+    .col3:hover .overlay-col3
+    {
+        height: 0;   
+    }
+    .gf-content-right {
+        float: right;
+        display:inline;
+        width:40%;
+        margin-top:30px;
+        padding-right:5%;
+        font-size: 8px;
+    }
+    .gf-content-right-code{
+     margin-right:5%;
+    }
+    .gf-content-left {
+    margin-top: 24px;
+    margin-left:3%;
+    float: left;
+    display:inline;
+    width:50%;
+    }
+    .button-primary{
+        padding-top:.5%;
+        font-size: 8px;
+    }
+    .btnlogin{
+        padding: 5px;
+    }
+}
+
+@media (min-width:1024px) and (max-width:1100px)
+{
+    .header{
+        width: 13% !important;
+        padding-left: 3%;
+    }
+    .sidemenu{
+        top:32% !important;
+    }
+}
+@media (min-width:1100px) and (max-width:1316px)
+{
+    .sidemenu{
+        top:32% !important;
+    }
+}
+@media (min-width:0px) and (max-width:991px)
+{
+    .div_overlay
+    {
+        min-height: 0px;
+        background-color: black;
+    }
+    .overlay a{
+        font-size: 24px;
+    }
+    .menu{
+        text-align: center;
+    }
+    .himage{
+        width: 40px;
+        height: 40px;
+        margin-left: 0%;
+    }
+    
+    .dis1{
+        visibility: visible;
+    }
+    .dis2{
+        visibility: visible;
+    }
+    .dis3{
+        visibility: visible;
+    }
+    .project1{
+        padding-top: 30%;
+    }
+    .project2{
+        padding-top: 30%;
+    }
+    .project3{
+        padding-top: 30%;
+    }
+}
+
+@media(min-width:431px) and (max-width:600px)
+{
+    
+    .navicons{
+    margin-left: 40%;
+    }
+}
+
+@media(min-width:601px) and (max-width:800px)
+{
+    
+    .navicons{
+    margin-left: 42%;
+    }
+}
+
+@media(min-width:801px) and (max-width:990px)
+{
+    
+    .navicons{
+    margin-left: 45%;
+    }
+}

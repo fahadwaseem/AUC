@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css.map">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css.map">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css.map">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+	<title>Index</title>
+    <script>
+    function openNav() {
+        if(document.getElementById("smenu").style.zIndex==='-10')
+            document.getElementById("smenu").style.zIndex = "100";
+        else{
+            document.getElementById("smenu").style.zIndex = "-10";
+        }
+        /*
+        document.getElementById("myNav").style.width = "100%";
+        $('.header').css('opacity','0');
+        */
+    }
+    /*
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+         $('.header').css('opacity','1');
+    }
+      */    
+    </script>
+</head>
+<body style="max-width:100%;overflow-x:hidden;">
+	<div class="containor-fluid">
+        
+        <div class="header">
+            <div style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; <img class="himage"  src="assets/images/logo.png" ></div>
+        </div>
+        <div id="smenu" class="sidemenu header" style="z-index:-10">
+            <div class="row">
+                <div  class="col-md-12">
+                <table class="table table-bordered mymenu">
+                    <tbody>
+                      <tr>
+                        <td><a href="landing.html#section3">WHAT WE DO</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="landing.html#section2">WHO WE ARE</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="landing.html#section7">WHERE WE ARE</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="career.html">CAREERS</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="landing.html#section6">LEGAL ADVICE</a></td>
+                      </tr>
+                      <tr>
+                        <td><a href="ourteam.html">OUR TEAM</a></td>
+                      </tr>
+                    </tbody>
+                </table>   
+                </div>
+            </div>
+        </div>
+        <!--
+        <div id="myNav" class="overlay">
+        
+        <div class="overlay-content">
+            <div class="row">
+            <div class="col-md-1">
+                <header>    
+                <a href="javascript:void(0)" style="font-weight:100" class="closebtn" onclick="closeNav()">&times;</a>
+                </header>
+            </div>
+            <div class="col-md-9">
+                <div class="menu">
+                <a href="landing.html#section3">WHAT WE DO</a>
+                <a href="landing.html#section2">WHO WE ARE</a>
+                <a href="landing.html#section7">WHERE WE ARE</a>
+                <a href="career.html">CAREERS</a>
+                <a href="landing.html#section6">LEGAL ADVICE</a>
+                <a href="ourteam.html">OUR TEAM</a>
+                </div>
+            </div>
+            <div class="col-md-2 col_div_overlay">
+                <div class="div_overlay">
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        -->
+        <div class="fullpager">
+        <div class="row">
+        <div class="col-md-4 col1">  
+        <div class="project1"> 
+            <div class="col1-text">
+            <center><a class="nlink" href="landing.html"><h1 class="h_col1">CONSULTATION</h1></a></center>
+            <center>
+                <div class="dis1">
+                The corner store of our legal 
+                practise is advicing corporate
+                clients on wide ranging issues
+                including incorporation, 
+                registeration whith the requisite
+                regulatory authorities, corpo-
+                rate companies.
+                </div>
+                </center>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-4 col2">
+        <div class="project2">
+            <div class="col2-text">
+                <center><a  class="nlink" href="landing.html"><h1>LEGAL SERVICES</h1></a></center>
+            <center>
+                <div class="dis2">
+                The corner store of our legal 
+                practise is advicing corporate
+                clients on wide ranging issues
+                including incorporation, 
+                registeration whith the requisite
+                regulatory authorities, corpo-
+                rate companies.
+                </div>
+            </center>
+           </div>
+        </div>
+        </div>
+        <div class="col-md-4 col3">
+        <div class="project3">
+            <div class="col3-text">
+                <center><a class="nlink" href="landing.html"><h1>LEGAL PROCESS<br>OUT SOURCING</h1></a></center>
+                <center>
+                <div class="dis3">
+                The corner store of our legal 
+                practise is advicing corporate
+                clients on wide ranging issues
+                including incorporation, 
+                registeration whith the requisite
+                regulatory authorities, corpo-
+                rate companies.
+                </div>
+                </center>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>    
+    </div>
+    <script>
+        $(document).ready(function(){
+       $( ".col1" ).mouseenter(function() {
+           
+           $('.col1').removeClass('col-md-4');
+           $('.col2').removeClass('col-md-4');
+           $('.col3').removeClass('col-md-4');
+           $('.col1').addClass('col-md-8');
+           $('.col2').addClass('col-md-2');
+           $('.col3').addClass('col-md-2');
+           $('.project1').css('padding-top','10%');
+           $('.project2').css('padding-top','110%');
+           $('.project3').css('padding-top','115%'); 
+       })
+       $(".col1").mouseleave(function(){
+           $('.col1').removeClass('col-md-8');
+           $('.col2').removeClass('col-md-2');
+           $('.col3').removeClass('col-md-2');
+           $('.col1').addClass('col-md-4');
+           $('.col2').addClass('col-md-4');
+           $('.col3').addClass('col-md-4');
+           $('.project1').css('padding-top','40%');
+           $('.project2').css('padding-top','40%');
+           $('.project3').css('padding-top','40%');
+       })
+       
+       $( ".col2" ).mouseenter(function() {
+           
+               
+               
+           $('.col1').removeClass('col-md-4');
+           $('.col2').removeClass('col-md-4');
+           $('.col3').removeClass('col-md-4');
+           $('.col1').addClass('col-md-2');
+           $('.col2').addClass('col-md-8');
+           $('.col3').addClass('col-md-2');
+           $('.project1').css('padding-top','115%');
+           $('.project2').css('padding-top','10%');
+           $('.project3').css('padding-top','110%');
+           $('.h_col1').css('font-size','26px');   
+           
+       })
+       $(".col2").mouseleave(function(){
+           $('.col1').removeClass('col-md-2');
+           $('.col2').removeClass('col-md-8');
+           $('.col3').removeClass('col-md-2');
+           $('.col1').addClass('col-md-4');
+           $('.col2').addClass('col-md-4');
+           $('.col3').addClass('col-md-4');
+           $('.project1').css('padding-top','40%');
+           $('.project2').css('padding-top','40%');
+           $('.project3').css('padding-top','40%');
+           $('.h_col1').css('font-size','36px');
+       })
+       
+        $( ".col3" ).mouseenter(function() {
+           
+               
+               
+           $('.col1').removeClass('col-md-4');
+           $('.col2').removeClass('col-md-4');
+           $('.col3').removeClass('col-md-4');
+           $('.col1').addClass('col-md-2');
+           $('.col2').addClass('col-md-2');
+           $('.col3').addClass('col-md-8');
+           $('.project1').css('padding-top','115%');
+           $('.project2').css('padding-top','105%');
+           $('.project3').css('padding-top','8%');
+           $('.h_col1').css('font-size','26px');   
+           
+       })
+       $(".col3").mouseleave(function(){
+           $('.col1').removeClass('col-md-2');
+           $('.col2').removeClass('col-md-2');
+           $('.col3').removeClass('col-md-8');
+           $('.col1').addClass('col-md-4');
+           $('.col2').addClass('col-md-4');
+           $('.col3').addClass('col-md-4');
+           $('.project1').css('padding-top','40%');
+           $('.project2').css('padding-top','40%');
+           $('.project3').css('padding-top','40%');
+           $('.h_col1').css('font-size','36px');
+       })
+       
+        });
+    </script>
+    </body>
+</html>
